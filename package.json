@@ -1,11 +1,24 @@
 {
-    "name": "plugin-nkn",
-    "version": "1.0.0",
+    "name": "@elizaos-plugins/plugin-nkn",
+    "version": "0.0.1",
     "description": "",
     "type": "module",
     "main": "dist/index.js",
     "module": "dist/index.js",
     "types": "dist/index.d.ts",
+    "agentConfig": {
+        "pluginType": "elizaos:plugin:0.0.1",
+        "pluginParameters": {
+            "NKN_CLIENT_PRIVATE_KEY": {
+                "type": "string",
+                "description": "Required, NKN client private key"
+            },
+            "NKN_CLIENT_ID": {
+                "type": "string",
+                "description": "Optional, NKN client ID"
+            }
+        }
+    },
     "exports": {
         "./package.json": "./package.json",
         ".": {
